@@ -7,6 +7,7 @@ import WhyUs from './components/WhyUs'
 import About from './components/About'
 import CTABanner from './components/CTABanner'
 import Footer from './components/Footer'
+import AcquisitionNotice from './components/AcquisitionNotice'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       >
         Skip to content
       </a>
+      <AcquisitionNotice />
       <Navbar />
       <main id="main">
         <Hero />
