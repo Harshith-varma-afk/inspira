@@ -32,11 +32,14 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <a href="#home" className="inline-block">
+            <a
+              href="#home"
+              className="inline-flex rounded-lg bg-white px-3 py-2 shadow-soft"
+            >
               <img
                 src="/logo.png"
                 alt="Inspira AI"
-                className="h-9 w-auto brightness-0 invert"
+                className="h-9 w-auto"
                 width={160}
                 height={36}
               />
