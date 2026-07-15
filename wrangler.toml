@@ -1,0 +1,6 @@
+# Cloudflare Pages — Vite static site
+# https://developers.cloudflare.com/pages/framework-guides/deploy-a-vite3-project/
+
+name = "inspira"
+compatibility_date = "2025-07-01"
+pages_build_output_dir = "dist"

@@ -45,6 +45,21 @@ Upload the `dist/` directory to any static host, or connect the repo to:
 
 - [Vercel](https://vercel.com) — framework preset: Vite
 - [Netlify](https://www.netlify.com) — build command `npm run build`, publish directory `dist`
+- [Cloudflare Pages](https://developers.cloudflare.com/pages/) — see below
+
+### Cloudflare Pages (required settings)
+
+A blank white page usually means Pages is serving the **source** `index.html` instead of the Vite build. In the Pages project settings, use:
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | None (or Vite) |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | `/` (leave default) |
+| Environment variable | `NODE_VERSION` = `22` |
+
+Then **Retry deployment** (or push a new commit). After deploy, View Source in the browser should show scripts under `/assets/...`, **not** `/src/main.jsx`.
 
 ## Project structure
 
